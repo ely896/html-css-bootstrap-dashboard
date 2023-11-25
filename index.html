@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Bootstrap desktop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">
+          <img src="./img/duck.png" alt="Bootstrap" width="50" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Anagrifica Utenti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Storico Prestiti</a>
+            </li>
+
+          </ul>
+        </div>
+        <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Cerca</button>
+            </form> -->
+      </div>
+    </nav>
+
+    <!--Start Main Content-->
+    <main>
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h1 class="fs-3">Catalogo Libri</h1>
+          <button class="btn btn-primary">Aggiungi libro</button>
+        </div>
+
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+
+              <th scope="col" class="w-50">Titolo</th>
+              <th scope="col" class="d-none d-md-block">Data prestito</th>
+              <th scope="col">Stato</th>
+              <th scope="col">Azioni</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">I pilastri della terra</td>
+              <td class="d-none d-md-table-cell">-</td>
+              <td>
+                <span class="badge bg-success">Disponibile</span>
+              </td>
+              <td>
+                <button type="button" class="btn btn-outline-dark ">
+                  <i class="fa fa-pencil-alt fa-sm fa-fw" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="btn btn-outline-dark ">
+                  <i class="fa fa-trash-alt fa-sm fa-fw" aria-hidden="true">
+                  </i></button>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">I promessi sposi</td>
+              <td class="d-none d-md-table-cell">-</td>
+              <td>
+                <span class="badge bg-success">Disponibile</span>
+              </td>
+              <td>
+                <button type="button" class="btn btn-outline-dark ">
+                  <i class="fa fa-pencil-alt fa-sm fa-fw" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="btn btn-outline-dark ">
+                  <i class="fa fa-trash-alt fa-sm fa-fw" aria-hidden="true"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Il Signore degli anelli</td>
+              <td class="d-none d-md-table-cell">18/10/2023</td>
+              <td>
+                <span class="badge bg-warning">In prestito</span>
+              </td>
+              <td>
+                <button type="button" class="btn btn-outline-dark ">
+                  <i class="fa fa-pencil-alt fa-sm fa-fw" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="btn btn-outline-dark ">
+                  <i class="fa fa-trash-alt fa-sm fa-fw" aria-hidden="true"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Harry Potter e la pietra filosofale</td>
+              <td class="d-none d-md-table-cell">-</td>
+              <td>
+                <span class="badge bg-success">Disponibile</span>
+              </td>
+              <td>
+                <button type="button" class="btn btn-outline-dark ">
+                  <i class="fa fa-pencil-alt fa-sm fa-fw" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="btn btn-outline-dark ">
+                  <i class="fa fa-trash-alt fa-sm fa-fw" aria-hidden="true"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Il codice Da Vinci</td>
+              <td class="d-none d-md-table-cell">-</td>
+              <td>
+                <span class="badge bg-danger">Non disponibile</span>
+              </td>
+              <td>
+                <button type="button" class="btn btn-outline-dark ">
+                  <i class="fa fa-pencil-alt fa-sm fa-fw" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="btn btn-outline-dark ">
+                  <i class="fa fa-trash-alt fa-sm fa-fw" aria-hidden="true"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Shining</td>
+              <td class="d-none d-md-table-cell">-</td>
+              <td>
+                <span class="badge bg-success">Disponibile</span>
+              </td>
+              <td>
+                <button type="button" class="btn btn-outline-dark ">
+                  <i class="fa fa-pencil-alt fa-sm fa-fw" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="btn btn-outline-dark ">
+                  <i class="fa fa-trash-alt fa-sm fa-fw" aria-hidden="true"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">La divina commedia</td>
+              <td class="d-none d-md-table-cell">21/09/2023</td>
+              <td>
+                <span class="badge bg-warning">In prestito</span>
+              </td>
+              <td>
+                <button type="button" class="btn btn-outline-dark ">
+                  <i class="fa fa-pencil-alt fa-sm fa-fw" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="btn btn-outline-dark ">
+                  <i class="fa fa-trash-alt fa-sm fa-fw" aria-hidden="true"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Il trono di spade</td>
+              <td class="d-none d-md-table-cell">-</td>
+              <td>
+                <span class="badge bg-success">Disponibile</span>
+              </td>
+              <td>
+                <button type="button" class="btn btn-outline-dark ">
+                  <i class="fa fa-pencil-alt fa-sm fa-fw" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="btn btn-outline-dark ">
+                  <i class="fa fa-trash-alt fa-sm fa-fw" aria-hidden="true"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Il mondo di Sofia</td>
+              <td class="d-none d-md-table-cell">-</td>
+              <td>
+                <span class="badge bg-danger">Non disponibile</span>
+              </td>
+              <td>
+                <button type="button" class="btn btn-outline-dark ">
+                  <i class="fa fa-pencil-alt fa-sm fa-fw" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="btn btn-outline-dark ">
+                  <i class="fa fa-trash-alt fa-sm fa-fw" aria-hidden="true"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Le cronache di Narnia: il leone, la strega e l'armadio</td>
+              <td class="d-none d-md-table-cell">25/07/2023</td>
+              <td>
+                <span class="badge bg-warning">In prestito</span>
+              </td>
+              <td>
+                <button type="button" class="btn btn-outline-dark ">
+                  <i class="fa fa-pencil-alt fa-sm fa-fw" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="btn btn-outline-dark ">
+                  <i class="fa fa-trash-alt fa-sm fa-fw" aria-hidden="true"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">Il piccolo principe</td>
+              <td class="d-none d-md-table-cell">-</td>
+              <td>
+                <span class="badge bg-success">Disponibile</span>
+              </td>
+              <td>
+                <button type="button" class="btn btn-outline-dark ">
+                  <i class="fa fa-pencil-alt fa-sm fa-fw" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="btn btn-outline-dark ">
+                  <i class="fa fa-trash-alt fa-sm fa-fw" aria-hidden="true"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">La storia infinita</td>
+              <td class="d-none d-md-table-cell">-</td>
+              <td>
+                <span class="badge bg-success">Disponibile</span>
+              </td>
+              <td>
+                <button type="button" class="btn btn-outline-dark ">
+                  <i class="fa fa-pencil-alt fa-sm fa-fw" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="btn btn-outline-dark ">
+                  <i class="fa fa-trash-alt fa-sm fa-fw" aria-hidden="true"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    </main>
+    <footer></footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
